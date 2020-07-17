@@ -15,7 +15,7 @@ const isDev = process.env.NODE_ENV !== 'production';
 const htmlPlugin = new HtmlWebpackPlugin({
   template: './src/client/index.html',
   filename: 'index.html',
-  inlineSource: '.(js|css)$', // embed all javascript and css inline
+  inlineSource: '.(js|css|tsx)$', // embed all javascript and css inline
 });
 
 /*      Shared Config
